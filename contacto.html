@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="Esta es una pagina de un consultorio dental de Tucuman- Argentina">
     <meta name="keywords" content="Odontologos, odontologia, ortodoncia, implantes, tratamiento conductos">
-    <meta name="author" content="Ing. Emiliano Rodriguez"> 
+    <meta name="author" content="Ing. Emiliano Rodriguez">
 
     <!-- OPEN GRAPH-->
 
@@ -28,44 +28,51 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid col-12">
         <div id=menu_principal class="row">
             <header id="header_index" class="col-4">
-                <img class="img_logo" src="imagenes/logo_ema.jpg" alt="logo del consultorio">
-                       </header>
-                <nav  class="col-6">
-                    <ul  id="menu_index"class="row mt-5">
-                        <li class="col"> <a href="index.html"> INICIO</a></li>
-                        <li class="col"> <a href="galeria.html"> GALERIA</a></li>
-                        <li class="col"> <a href="tarifas.html"> TARIFAS </a></li>
-                        <li class="col"> <a href="contacto.html"> CONTACTO</a></li>
-                    </ul>
-                </nav>
+                <img class="img_logo" src="imagenes/acortado.png" alt="logo del consultorio">
+            </header>
+            <nav class="col-5 menu">
+                <ul id="menu_index" class="row mt-5">
+                    <li class="col"> <a href="index.html"> INICIO</a></li>
+                    <li class="col"> <a href="galeria.html"> GALERIA</a></li>
+                    <li class="col"> <a href="tarifas.html"> TARIFAS </a></li>
+                    <li class="col"> <a href="contacto.html"> CONTACTO</a></li>
+                </ul>
+            </nav>
         </div>
 
-               <div class="row">
-                    <div class="col-md-6 mt-3">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="name">Nombre:</label>
-                                <input type="text" class="form-control" placeholder="Ingresa el nombre">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" placeholder="Ingresa el mail">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="mensaje">Mensaje:</label>
-                                <textarea class="form-control" placeholder="Ingresa el mensaje"
-                                    aria-label="With textarea"></textarea>
-                            </div>
-                            <input type="submit" class="btn btn-success mb-3" value="Enviar" />
-                            <input type="reset" class="btn btn-success mb-3" value="Limpiar">
-                        </form>
+        <div class="row formulario">
+            <div class="col-md-6 mt-4">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="form-control" placeholder="Ingresa el nombre">
                     </div>
-                </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Ingresa el mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" placeholder="Ingresa el mensaje"
+                            aria-label="With textarea"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-success mb-3" value="Enviar" />
+                    <input type="reset" class="btn btn-success mb-3" value="Limpiar">
+                </form>
+            </div>
+            <div class="col-5 mt-4">
+                <h5>Dónde Estamos</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.008803558172!2d-65.20891298529591!3d-26.839672296625498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c093e85995f%3A0x1dc05b2f64893858!2s9%20de%20Julio%20640%2C%20T4000IHN%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1612053277988!5m2!1ses!2sar"
+                    width="510" height="382" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
 
         </main>
         <footer id=footer_index class="row">
@@ -83,17 +90,17 @@
             <div class="col-md-6  col-sm-12">
                 <h5> Búscanos en nuestras redes</h5>
                 <a href="#">
-                    <img src="imagenes/iconoface2.png" alt="FaceBook" title="FaceBook"/>
+                    <img src="imagenes/iconoface2.png" alt="FaceBook" title="FaceBook" />
                 </a>
                 <a href="#">
-                    <img src="imagenes/iconoInsta.png" alt="Instagram" title="Instagram"/>
+                    <img src="imagenes/iconoInsta.png" alt="Instagram" title="Instagram" />
                 </a>
             </div>
-            
+
         </footer>
     </div>
 
-     <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
