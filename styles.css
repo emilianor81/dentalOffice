@@ -1,10 +1,12 @@
+/*IMPORTANDO LA FUENTE DEL PROYECTO*/
+
 @font-face {
   font-family: OpenSansCustom;
   src: url(fonts/opensans/OpenSansCondensed-Bold.ttf);
 }
 
 
-/* estilos */
+/* estilos generales*/
 * {
   text-decoration: none;
   font-family: OpenSansCustom;
@@ -13,12 +15,7 @@
 }
 
  
-.container{
-  box-shadow: 0px 0px 10px #ccc;
-  margin-top: 15px;
-  min-height: 80vh;
-  background-color: #f0e2d0;
-}
+/*ESTILOS DEL CONTAINER*/
 
 .container-fluid{
   box-shadow: 0px 0px 10px #ccc;
@@ -31,8 +28,8 @@
 /*CABECERA*/
 
 .img_logo{
-  height: 120px;
-  width: 120px;
+  height: 110px;
+  width: 110px;
  margin: 0px;
 }
 
@@ -42,6 +39,7 @@
   width: 80px;
   object-fit: cover;
 }
+
 
 h1 {
   color: #aa8976;
@@ -54,18 +52,7 @@ h1 {
 /*FIN CABECERA*/
 
 
-h3 {
-  color: #aa8976;
-  font-size: 24px;
-}
 
-a {
-  font-family: OpenSansCustom;
-  font-weight: bold;
-  text-decoration: none;
-  color: #f0e2d0;
-  font-size: 25px;
-}
 
 
 /*BARRA NAVEGACION*/
@@ -76,30 +63,37 @@ a:hover {
 
 #menu_principal{
   background-color: #1d1c1c;
-  /* 141, 153, 174;
-  /*margin-left: 30px;*/
   height: 150px;
-  width: 100%;
 }
 
 
-nav{
-  margin-left: 280px;
+a {
+  font-family: OpenSansCustom;
+  font-weight: bold;
+  text-decoration: none;
+  color: #f0e2d0;
+  font-size: 25px;
 }
+
+
+/*
+.menu{
+  margin-left: 250px;
+  margin-top: 35px;
+}*/
+
 
 
 #menu_index{
   background-color: #1d1c1c;
-  align-items: center;
+ /* align-items: center;*/
   list-style: none;
+  margin-top: 48px;
 }
 
 
-/* layout fotos de pagina principal y pag index*/
-.layout {
-  display: flex;
-  justify-content: center;
-}
+
+/* estilos de texto en pagina index */
 
 .detalle {
   margin: 10px;
@@ -115,6 +109,7 @@ nav{
   list-style: none;
 }
 
+
 /*FORMULARIO*/
 
 .formulario{
@@ -122,7 +117,9 @@ nav{
 }
 
 
+
 /* FOOTER*/
+
 #footer .autor {
   flex-basis: auto;
   flex-grow: 1;
@@ -141,6 +138,8 @@ nav{
 
 #footer_index{
   background-color:#1d1c1c;
+  color: #f0e2d0;
+
 }
 
 
@@ -148,7 +147,19 @@ nav{
   width: 55px;
 }
 
-/*PIE DE PAGINA*/
+
+.iconos_redes{
+  width: 40px;
+   height: 40px;
+
+}
+
+
+h3 {
+  color: #aa8976;
+  font-size: 24px;
+}
+
 #footer{
   display: flex;
   flex-flow: row wrap;
@@ -184,6 +195,7 @@ nav{
 .imgs:hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
 #galeria {overflow:hidden;}
 
+
 /*ESTILOS SLIDER DE IMAGENES*/
 #slider {
   height: 80vh;
@@ -195,20 +207,6 @@ nav{
   object-fit: cover;
 }
 
-/*ESTILOS GALERIA CON GRID -- HTML GALERIAGRID*/
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-
-.imgsgrid {
-  flex-grow: 1;
-  height: 300px;
-  width: 300px;
-  object-fit: cover;
-}
-
 
 /* ESTILOS A LA TABLA*/
 .table {
@@ -216,33 +214,91 @@ nav{
   margin-bottom: 75px;
 }
 
-#footer_index{
-  background-color: #1d1c1c;
-  color: #f0e2d0;
-}
 
 
 /*RESPONSIVE MENU*/
 
-@media (max-width: 622px) { 
+/*desde 0 px hasta 1067 px se ejecutaran estos estilos*/
+
+@media (max-width: 1067px) { 
+  .menu{
+    margin-top: 5px;
+}
+  #menu_index{
+    margin-top: 30px;
+  }
   iframe{
-    width: 450px;
-    height: 300px;
+    width: 473px;
+    height: 315px;
+  }
+ }
+
+
+ 
+ @media (max-width: 1000px) { 
+  .img_logo{
+    height: 90px;
+    width: 90px;
   }
  }
 
  
-@media (max-width: 472px) { 
+@media (max-width: 980px) { 
   iframe{
-    width: 315px;
-    height: 210px;
+    width: 379px;
+    height: 252px;
   }
  }
 
 
- @media (max-width: 340px) { 
-  iframe{
-    width: 252px;
-    height: 168px;
+ @media (max-width: 574px) { 
+  .menu{
+      margin-top: 5px;
   }
  }
+
+
+ 
+  @media (max-width: 494px) { 
+  .menu{
+    margin-top: 0px;
+  }
+  #menu_principal {
+    height: 165px;
+  }
+  #menu_index{
+    margin-top: 5px;
+  }
+  iframe{
+    width: 425px;
+    height: 268px;
+  }
+}
+
+
+@media (max-width: 443px) { 
+  iframe{
+    width: 361px;
+    height: 227px;
+  }
+ }
+
+ 
+ @media (max-width: 377px) { 
+  iframe{
+    width: 247px;
+    height: 156px;
+  }   
+ }
+
+
+
+
+
+
+ 
+
+
+
+
+
