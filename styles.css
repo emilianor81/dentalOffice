@@ -19,7 +19,6 @@
 
 .container-fluid{
   box-shadow: 0px 0px 10px #ccc;
-  margin-top: 15px;
   min-height: 80vh;
   background-color: #f0e2d0;
 }
@@ -30,7 +29,7 @@
 .img_logo{
   height: 110px;
   width: 110px;
- margin: 0px;
+  margin-top: 15px;
 }
 
 
@@ -244,6 +243,14 @@ h3 {
  }
 
 
+ @media (max-width: 767px) { 
+  iframe{
+    width: 492px;
+    height: 327px;
+  }
+ }
+
+
  @media (max-width: 574px) { 
   .menu{
       margin-top: 5px;
@@ -279,8 +286,8 @@ h3 {
  
  @media (max-width: 377px) { 
   iframe{
-    width: 247px;
-    height: 156px;
+    width: 284px;
+    height: 179px;
   }   
  }
 
